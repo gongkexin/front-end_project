@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hello seajs</title>
+</head>
+<body>
+	<div id="container">
+		<input type="button" id="clickme" value="clickme">
+	</div>	
+	<script type="text/javascript" src="sea-modules/sea-debug.js"></script>
+	<script type="text/javascript">
+
+	seajs.config({
+		base:"../test/sea-modules/",
+		alias:{
+			"jquery": "jquery.js"
+		}
+	});
+
+	seajs.use("../test/main");
+	</script>
+</body>
+</html>
